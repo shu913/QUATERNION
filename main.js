@@ -49,7 +49,7 @@ class App {
 
   load() {
     return new Promise((resolve) => {
-      const earthImgUrl = "public/earth.jpeg";
+      const earthImgUrl = "public/earth.JPEG";
       const loader = new THREE.TextureLoader();
       loader.load(earthImgUrl, (texture) => {
         this.texture = texture;
