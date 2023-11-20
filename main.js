@@ -40,11 +40,11 @@ class App {
 
     this.clock = new THREE.Clock();
 
-    window.addEventListener("resize", () => {
-      this.renderer.setSize(window.innerWidth, window.innerHeight);
-      this.camera.aspect = window.innerWidth / window.innerHeight;
-      this.camera.updateProjectionMatrix();
-    });
+    // window.addEventListener("resize", () => {
+    //   this.renderer.setSize(window.innerWidth, window.innerHeight);
+    //   this.camera.aspect = window.innerWidth / window.innerHeight;
+    //   this.camera.updateProjectionMatrix();
+    // });
   }
 
   load() {
