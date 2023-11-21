@@ -296,5 +296,7 @@ class App {
         this.trailGeometry.setFromPoints(this.trailVertices);
       }
     }
+
+    this.group.rotation.y += 0.002;
   }
 }
