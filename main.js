@@ -103,7 +103,6 @@ class App {
     }
 
     this.group = new THREE.Group();
-    // this.group.rotation.z = -(Math.PI / 180) * 23.4; // 自転軸は公転軸より約23.4度傾いているらしい(https://ja.wikipedia.org/wiki/%E5%9C%B0%E8%BB%B8)
     this.scene.add(this.group);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -297,8 +296,5 @@ class App {
         this.trailGeometry.setFromPoints(this.trailVertices);
       }
     }
-
-    // 地球の自転
-    // this.earth.rotation.y = -elapsedTime / 10;
   }
 }
